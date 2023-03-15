@@ -4,13 +4,11 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeroesComponent } from './heroes/heroes.component';
 import { DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxPieChartModule, DxSelectBoxModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
   ],
   imports: [
     BrowserModule,

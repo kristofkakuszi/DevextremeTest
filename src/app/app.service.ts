@@ -46,7 +46,7 @@ const employees: Employee[] = [{
   HireDate: '1998/04/23',
   Notes: "Greta has been DevAV's HR Manager since 2003. She joined DevAV from Sonee Corp.\r\n\r\nGreta is currently training for the NYC marathon. Her best marathon time is 4 hours. Go Greta.",
   Address: '1700 S Grandview Dr.',
-  StateID: 11,
+  StateID: 3,
 }, {
   ID: 5,
   FirstName: 'Brett',
@@ -57,7 +57,7 @@ const employees: Employee[] = [{
   HireDate: '2009/03/06',
   Notes: 'Brett came to DevAv from Microsoft and has led our IT department since 2012.\r\n\r\nWhen he is not working hard for DevAV, he coaches Little League (he was a high school pitcher).',
   Address: '1120 Old Mill Rd.',
-  StateID: 13,
+  StateID: 1,
 }, {
   ID: 6,
   FirstName: 'Sandra',
@@ -68,7 +68,7 @@ const employees: Employee[] = [{
   HireDate: '2005/05/11',
   Notes: "Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you've not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.",
   Address: '4600 N Virginia Rd.',
-  StateID: 44,
+  StateID: 4,
 }, {
   ID: 7,
   FirstName: 'Kevin',
@@ -101,7 +101,7 @@ const employees: Employee[] = [{
   HireDate: '2009/04/22',
   Notes: 'As our ombudsman, Kent is on the front-lines solving customer problems and helping our partners address issues out in the field.    He is a classically trained musician and is a member of the Chamber Orchestra.',
   Address: '12100 Mora Dr',
-  StateID: 26,
+  StateID: 6,
 }, {
   ID: 10,
   FirstName: 'Taylor',
@@ -123,7 +123,7 @@ const employees: Employee[] = [{
   HireDate: '2012/02/01',
   Notes: 'Sammy is proud to be a member of the DevAV team. He joined the team in 2012 and has been in the sales department from the beginning.\r\n\r\nHe has just picked up golf so you can find him on the links every weekend.',
   Address: '645 Prospect Crescent',
-  StateID: 11,
+  StateID: 8,
 }, {
   ID: 12,
   FirstName: 'Kelly',
@@ -145,7 +145,7 @@ const employees: Employee[] = [{
   HireDate: '2008/06/19',
   Notes: 'Natalie travels the US and teaches our partners how to explain the benefits of our products to customers.\r\n\r\nShe is a proud wife and mom and volunteers her time at the elementary school.',
   Address: '6400 E Bixby Hill Rd',
-  StateID: 29,
+  StateID: 9,
 }, {
   ID: 14,
   FirstName: 'Walter',
@@ -156,7 +156,7 @@ const employees: Employee[] = [{
   HireDate: '2011/02/17',
   Notes: "Walter has been developing apps and websites for DevAV since 2011. His passion is software and if you ever walk by his desk, you'll know why.\r\n\r\nWally once worked 72 hours straight - writing code and fixing bugs.",
   Address: '10385 Shadow Oak Dr',
-  StateID: 13,
+  StateID: 10,
 }];
 
 const states: State[] = [{
@@ -189,129 +189,6 @@ const states: State[] = [{
 }, {
   ID: 10,
   Name: 'Florida',
-}, {
-  ID: 11,
-  Name: 'Georgia',
-}, {
-  ID: 12,
-  Name: 'Hawaii',
-}, {
-  ID: 13,
-  Name: 'Idaho',
-}, {
-  ID: 14,
-  Name: 'Illinois',
-}, {
-  ID: 15,
-  Name: 'Indiana',
-}, {
-  ID: 16,
-  Name: 'Iowa',
-}, {
-  ID: 17,
-  Name: 'Kansas',
-}, {
-  ID: 18,
-  Name: 'Kentucky',
-}, {
-  ID: 19,
-  Name: 'Louisiana',
-}, {
-  ID: 20,
-  Name: 'Maine',
-}, {
-  ID: 21,
-  Name: 'Maryland',
-}, {
-  ID: 22,
-  Name: 'Massachusetts',
-}, {
-  ID: 23,
-  Name: 'Michigan',
-}, {
-  ID: 24,
-  Name: 'Minnesota',
-}, {
-  ID: 25,
-  Name: 'Mississippi',
-}, {
-  ID: 26,
-  Name: 'Missouri',
-}, {
-  ID: 27,
-  Name: 'Montana',
-}, {
-  ID: 28,
-  Name: 'Nebraska',
-}, {
-  ID: 29,
-  Name: 'Nevada',
-}, {
-  ID: 30,
-  Name: 'New Hampshire',
-}, {
-  ID: 31,
-  Name: 'New Jersey',
-}, {
-  ID: 32,
-  Name: 'New Mexico',
-}, {
-  ID: 33,
-  Name: 'New York',
-}, {
-  ID: 34,
-  Name: 'North Carolina',
-}, {
-  ID: 35,
-  Name: 'Ohio',
-}, {
-  ID: 36,
-  Name: 'Oklahoma',
-}, {
-  ID: 37,
-  Name: 'Oregon',
-}, {
-  ID: 38,
-  Name: 'Pennsylvania',
-}, {
-  ID: 39,
-  Name: 'Rhode Island',
-}, {
-  ID: 40,
-  Name: 'South Carolina',
-}, {
-  ID: 41,
-  Name: 'South Dakota',
-}, {
-  ID: 42,
-  Name: 'Tennessee',
-}, {
-  ID: 43,
-  Name: 'Texas',
-}, {
-  ID: 44,
-  Name: 'Utah',
-}, {
-  ID: 45,
-  Name: 'Vermont',
-}, {
-  ID: 46,
-  Name: 'Virginia',
-}, {
-  ID: 47,
-  Name: 'Washington',
-}, {
-  ID: 48,
-  Name: 'West Virginia',
-}, {
-  ID: 49,
-  Name: 'Wisconsin',
-}, {
-  ID: 50,
-  Name: 'Wyoming',
-}, {
-  ID: 51,
-  Name: 'North Dakota',
 }];
 
 /*.*/
