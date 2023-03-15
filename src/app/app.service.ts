@@ -229,4 +229,8 @@ export class AppServiceTsService {
   getPopulationByRegions(): PopulationByRegion[] {
     return populationByRegions;
   }
+
+  getStatesInsteadOfPopulationByRegions(): State[] {
+    return states;
+  }
 }

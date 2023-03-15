@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { AppServiceTsService } from './app.service';
 import { Employee } from './models/employee';
 import { State } from './models/states';
-import { DxDataGridModule, DxSelectBoxModule, DxCheckBoxModule } from 'devextreme-angular';
 import { DxPieChartModule } from 'devextreme-angular';
 import { PercentPipe } from '@angular/common';
 import { PopulationByRegion } from './models/popluationByRegion';
@@ -32,6 +31,9 @@ export class AppComponent {
     this.states = service.getStates();
 
     this.populationByRegions = service.getPopulationByRegions();
+    console.log(this.populationByRegions)
+    this.statesInsteadOfpopulationByRegions = service.getStatesInsteadOfPopulationByRegions();
+    console.log(this.statesInsteadOfpopulationByRegions)
   }
 
   /*-*/
@@ -39,6 +41,7 @@ export class AppComponent {
   pipe: any = new PercentPipe('en-US');
 
   populationByRegions: PopulationByRegion[];
+  statesInsteadOfpopulationByRegions: State[];
 
   customizeTooltip = (arg: any) => ({
     text: `${arg.valueText} - ${this.pipe.transform(arg.percent, '1.2-2')}`,
