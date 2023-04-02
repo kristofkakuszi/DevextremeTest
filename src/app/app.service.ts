@@ -233,4 +233,8 @@ export class AppServiceTsService {
   getStatesInsteadOfPopulationByRegions(): State[] {
     return states;
   }
+
+  public countState(state: string, arr: string[]): number { //count the number of times a state name appears in an array of strings:
+    return arr.filter(str => str === state).length;
+  }
 }
