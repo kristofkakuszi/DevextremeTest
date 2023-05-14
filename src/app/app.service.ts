@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Employee } from './models/employee';
+import { MyDataItem } from './models/items';
 import { PopulationByRegion } from './models/popluationByRegion';
 import { State } from './models/states';
 
@@ -213,10 +214,21 @@ const populationByRegions: PopulationByRegion[] = [{
   val: 35104756,
 }];
 
+
+const items: MyDataItem[] = [
+  { id: 1, name: 'Item 1', value: 10 },
+  { id: 2, name: 'Item 2', value: 20 },
+  { id: 3, name: 'Item 3', value: 30 },
+];
+
 @Injectable({
   providedIn: 'root'
 })
 export class AppServiceTsService {
+
+  getItems() {
+    return items;
+  }
 
   getEmployees() {
     return employees;

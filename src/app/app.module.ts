@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxPieChartModule, DxSelectBoxModule } from 'devextreme-angular';
+import { DxButtonModule, DxChartModule, DxCheckBoxModule, DxDataGridModule, DxPieChartModule, DxSelectBoxModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxPieChartModule, D
     DxDataGridModule,
     DxSelectBoxModule,
     DxCheckBoxModule,
-    DxPieChartModule
-
+    DxPieChartModule,
+    DxChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

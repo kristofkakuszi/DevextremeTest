@@ -5,6 +5,7 @@ import { State } from './models/states';
 import { DxPieChartModule } from 'devextreme-angular';
 import { PercentPipe } from '@angular/common';
 import { PopulationByRegion } from './models/popluationByRegion';
+import { MyDataItem } from './models/items';
 
 @Component({
   selector: 'app-root',
@@ -12,54 +13,44 @@ import { PopulationByRegion } from './models/popluationByRegion';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+
   floridaCount: any;
   californiaCount: any;
-
   stateCount: any
-
   countStates: any
 
-
-
-  dataSource: Employee[];
   states: State[];
   startEditAction = 'click';
   selectTextOnEditStart = true;
 
+  items: MyDataItem[];
+
   constructor(service: AppServiceTsService) {
 
-    this.dataSource = service.getEmployees();
+    //this.dataSource = service.getEmployees();
     this.states = service.getStates();
     console.log(this.states)
 
-    this.populationByRegions = service.getPopulationByRegions();
-    console.log(this.populationByRegions)
-
+    this.items = service.getItems();
+    console.log(this.items)
 
     //const states = ['Florida', 'Texas', 'California', 'Florida', 'Texas', 'Florida'];
-
     //this.floridaCount = service.countState('Florida', this.states.Name); //-> not working. Why? Since states is an array of State objects, you need to iterate over it and access the Name property of each object to compare it with the desired state name. Here's an example of how you can do it:
     this.floridaCount = service.countState('Florida', this.states.map(s => s.Name)); //right solution
     this.californiaCount = service.countState('California', this.states.map(s => s.Name)); //right solution
     console.log(this.floridaCount)
     console.log(this.californiaCount)
 
-
-
-
     //this.countStates = service.countState('Florida', this.states.map(s => s.Name)); //right solution
-    console.log(this.countStates = this.dataSource.map(s => s.StateID)) //az idkat kiirja a kulonbozo stateknek
+    //console.log(this.countStates = this.dataSource.map(s => s.StateID)) //az idkat kiirja a kulonbozo stateknek
+  }
 
+  addNewItem() {
+    const newItemId = this.items.length + 1; // generate unique id
+    const newItemValue = Math.floor(Math.random() * 100); // generate random value
+    const newItem: MyDataItem = { id: newItemId, name: `Item ${newItemId}`, value: newItemValue };
+    this.items.push(newItem);
   }
 
   /*-*/
-
-  pipe: any = new PercentPipe('en-US');
-  populationByRegions: PopulationByRegion[];
-
-  customizeTooltip = (arg: any) => ({
-    text: `${arg.valueText} - ${this.pipe.transform(arg.percent, '1.2-2')}`,
-  });
-
 }
